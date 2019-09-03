@@ -1,0 +1,651 @@
+/*
+Version         : 1.0
+Created Date    : 3/9/2019
+Modified Date   : -
+Creator         : dikaseva
+Contributor     : Nadhifa, Tyagita, George
+About           : Urbanstory is a design system library produced by UI / UX Team of Urbanhire
+*/
+/* global css */
+html, * {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #212121;
+}
+
+::placeholder {
+  color: #c2c2c2;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c2c2c2;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c2c2c2;
+}
+
+::selection {
+  background: #011148;
+  /* Safari */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #011148;
+  /* Firefox */
+  color: #fff;
+}
+
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+input[type=submit],
+button {
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+a {
+  color: #2791d9;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin: 1rem 0 1rem 0;
+  font-family: "Barlow", Arial, sans-serif;
+}
+h1.is-reset,
+h2.is-reset,
+h3.is-reset,
+h4.is-reset,
+h5.is-reset,
+h6.is-reset {
+  margin: 0;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h1 small {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h2 small {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+h3 small {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+h4 small {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+h5 small {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+h6 small {
+  font-size: 0.6875rem;
+}
+
+article p {
+  line-height: 1.5rem;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 12px;
+  color: #757575;
+  font-style: italic;
+}
+
+dl dt {
+  color: #212121;
+  padding: 4px 0;
+}
+dl dd {
+  color: #757575;
+  padding: 4px 0;
+}
+
+/* extend classes */
+.padd-s {
+  padding: 4px;
+}
+
+.padd-s-vr {
+  padding: 4px 0;
+}
+
+.padd-s-hr {
+  padding: 0 4px;
+}
+
+.padd-m {
+  padding: 8px;
+}
+
+.padd-m-vr {
+  padding: 8px 0;
+}
+
+.padd-m-hr {
+  padding: 0 8px;
+}
+
+.padd-l {
+  padding: 16px;
+}
+
+.padd-l-vr {
+  padding: 16px 0;
+}
+
+.padd-m-hr {
+  padding: 0 16px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.rounded, .img-wrapper {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.box-shadow, .img-wrapper {
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.transition, textarea.uh-input-forms,
+input[type=text].uh-input-forms,
+input[type=password].uh-input-forms,
+input[type=email].uh-input-forms,
+input[type=search].uh-input-forms,
+select.uh-input-forms, .uh-btn {
+  -webkit-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  -moz-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  -o-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+}
+
+.uh-btn {
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #757575;
+  padding: 0 1rem;
+  line-height: 38px;
+  border: solid 1px transparent;
+  letter-spacing: 0.035em;
+  outline: none;
+  display: inline-block;
+  display: inline-flex;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.uh-btn:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+.uh-btn:focus {
+  background-color: #ebebeb;
+  -webkit-box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.15);
+  box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.15);
+}
+
+.uh-btn-prime {
+  background-color: #33beef;
+  color: white;
+}
+.uh-btn-prime:hover {
+  background-color: #1bb6ed;
+}
+.uh-btn-prime:focus {
+  background-color: #11a8de;
+  -webkit-box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+  box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+}
+
+.uh-btn-success {
+  background-color: #2fbd90;
+  color: white;
+}
+.uh-btn-success:hover {
+  background-color: #2aa980;
+}
+.uh-btn-success:focus {
+  background-color: #259471;
+  -webkit-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+}
+
+.uh-btn-danger {
+  background-color: #ef4344;
+  color: white;
+}
+.uh-btn-danger:hover {
+  background-color: #ed2c2d;
+}
+.uh-btn-danger:focus {
+  background-color: #eb1415;
+  -webkit-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+}
+
+.uh-btn-median {
+  background-color: #2791d9;
+  color: white;
+}
+.uh-btn-median:hover {
+  background-color: #2283c4;
+}
+.uh-btn-median:focus {
+  background-color: #1f74ae;
+  -webkit-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+}
+
+.uh-btn-firm {
+  background-color: #011148;
+  color: white;
+}
+.uh-btn-firm:hover {
+  background-color: #010b2f;
+}
+.uh-btn-firm:focus {
+  background-color: #000516;
+  -webkit-box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+  box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+}
+
+.uh-btn-flat {
+  background: none;
+  color: #757575;
+  border: solid 1px transparent;
+}
+
+.uh-btn-flat-firm {
+  background-color: rgba(1, 17, 72, 0.035);
+  border: solid 1px #011148;
+  color: #011148;
+}
+.uh-btn-flat-firm:hover {
+  background-color: rgba(1, 17, 72, 0.08);
+}
+.uh-btn-flat-firm:focus {
+  background-color: rgba(1, 17, 72, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+  box-shadow: 0 0 0 3px rgba(1, 17, 72, 0.15);
+}
+
+.uh-btn-flat-median {
+  background-color: rgba(39, 145, 217, 0.035);
+  border: solid 1px #2791d9;
+  color: #2791d9;
+}
+.uh-btn-flat-median:hover {
+  background-color: rgba(39, 145, 217, 0.08);
+}
+.uh-btn-flat-median:focus {
+  background-color: rgba(39, 145, 217, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+}
+
+.uh-btn-flat-prime {
+  background-color: rgba(51, 190, 239, 0.035);
+  border: solid 1px #33beef;
+  color: #33beef;
+}
+.uh-btn-flat-prime:hover {
+  background-color: rgba(51, 190, 239, 0.08);
+}
+.uh-btn-flat-prime:focus {
+  background-color: rgba(51, 190, 239, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+  box-shadow: 0 0 0 3px rgba(51, 190, 239, 0.15);
+}
+
+.uh-btn-flat-success {
+  background-color: rgba(47, 189, 144, 0.035);
+  border: solid 1px #2fbd90;
+  color: #2fbd90;
+}
+.uh-btn-flat-success:hover {
+  background-color: rgba(47, 189, 144, 0.08);
+}
+.uh-btn-flat-success:focus {
+  background-color: rgba(47, 189, 144, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+}
+
+.uh-btn-flat-grey {
+  background-color: rgba(163, 163, 163, 0.035);
+  border: solid 1px #757575;
+  color: #757575;
+}
+.uh-btn-flat-grey:hover {
+  background-color: rgba(163, 163, 163, 0.08);
+}
+.uh-btn-flat-grey:focus {
+  background-color: rgba(163, 163, 163, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(163, 163, 163, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(163, 163, 163, 0.15);
+  box-shadow: 0 0 0 3px rgba(163, 163, 163, 0.15);
+}
+
+.uh-btn-flat-danger {
+  background-color: rgba(239, 67, 68, 0.035);
+  border: solid 1px #ef4344;
+  color: #ef4344;
+}
+.uh-btn-flat-danger:hover {
+  background-color: rgba(239, 67, 68, 0.08);
+}
+.uh-btn-flat-danger:focus {
+  background-color: rgba(239, 67, 68, 0.15);
+  -webkit-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+}
+
+.uh-btn[disabled=true],
+.uh-btn-disabled {
+  background-color: #d6d6d6;
+  color: #c2c2c2;
+  cursor: not-allowed;
+}
+.uh-btn[disabled=true]:hover,
+.uh-btn-disabled:hover {
+  background-color: #d6d6d6;
+  color: #c2c2c2;
+  cursor: not-allowed;
+}
+.uh-btn[disabled=true]:focus,
+.uh-btn-disabled:focus {
+  background-color: #d6d6d6;
+  -webkit-box-shadow: 0 0 0 3px rgba(117, 117, 117, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(117, 117, 117, 0.15);
+  box-shadow: 0 0 0 3px rgba(117, 117, 117, 0.15);
+}
+
+.uh-btn-small {
+  font-size: 14px;
+  padding: 0 0.5rem;
+  line-height: 28px;
+}
+
+.uh-btn-medium {
+  font-size: 16px;
+  padding: 0 1rem;
+  line-height: 38px;
+}
+
+.uh-btn-large {
+  font-size: 18px;
+  padding: 0 1rem;
+  line-height: 48px;
+}
+
+.uh-link {
+  text-decoration: underline;
+  color: #2791d9;
+}
+.uh-link:hover {
+  color: #2283c4;
+}
+.uh-link:active {
+  color: #1f74ae;
+}
+.uh-link.is-grey {
+  color: #a3a3a3;
+}
+.uh-link.is-grey:hover {
+  color: #757575;
+}
+.uh-link.is-grey:active {
+  color: #212121;
+}
+
+textarea.uh-input-forms,
+input[type=text].uh-input-forms,
+input[type=password].uh-input-forms,
+input[type=email].uh-input-forms,
+input[type=search].uh-input-forms,
+select.uh-input-forms {
+  outline: none;
+  border: solid 1px #c2c2c2;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+textarea.uh-input-forms:focus,
+input[type=text].uh-input-forms:focus,
+input[type=password].uh-input-forms:focus,
+input[type=email].uh-input-forms:focus,
+input[type=search].uh-input-forms:focus,
+select.uh-input-forms:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+}
+textarea.uh-input-forms[disabled],
+input[type=text].uh-input-forms[disabled],
+input[type=password].uh-input-forms[disabled],
+input[type=email].uh-input-forms[disabled],
+input[type=search].uh-input-forms[disabled],
+select.uh-input-forms[disabled] {
+  border: solid 1px #d6d6d6;
+  cursor: not-allowed;
+}
+
+select {
+  height: 40px;
+  width: 100%;
+  background: white;
+}
+
+.uh-input-form label:first-of-type {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.uh-input-form.width-auto textarea,
+.uh-input-form.width-auto input,
+.uh-input-form.width-auto select {
+  width: auto;
+}
+.uh-input-form textarea {
+  resize: vertical;
+  overflow: auto;
+  line-height: 1rem;
+  padding: 8px;
+  min-height: 64px;
+}
+.uh-input-form label + label {
+  display: block;
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  margin-top: -4px;
+  margin-bottom: 5px;
+}
+.uh-input-form textarea,
+.uh-input-form input,
+.uh-input-form select {
+  width: 100%;
+}
+.uh-input-form textarea + label,
+.uh-input-form input + label,
+.uh-input-form select + label {
+  display: block;
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+.uh-input-form.is-danger label {
+  color: #ef4344;
+}
+.uh-input-form.is-danger select,
+.uh-input-form.is-danger textarea,
+.uh-input-form.is-danger input[type=text],
+.uh-input-form.is-danger input[type=password],
+.uh-input-form.is-danger input[type=email],
+.uh-input-form.is-danger input[type=search] {
+  border: solid 1px #ef4344;
+}
+.uh-input-form.is-danger select:focus,
+.uh-input-form.is-danger textarea:focus,
+.uh-input-form.is-danger input[type=text]:focus,
+.uh-input-form.is-danger input[type=password]:focus,
+.uh-input-form.is-danger input[type=email]:focus,
+.uh-input-form.is-danger input[type=search]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+  box-shadow: 0 0 0 3px rgba(239, 67, 68, 0.15);
+}
+.uh-input-form.is-warning label {
+  color: #ffce07;
+}
+.uh-input-form.is-warning select,
+.uh-input-form.is-warning textarea,
+.uh-input-form.is-warning input[type=text],
+.uh-input-form.is-warning input[type=password],
+.uh-input-form.is-warning input[type=email],
+.uh-input-form.is-warning input[type=search] {
+  border: solid 1px #ffce07;
+}
+.uh-input-form.is-warning select:focus,
+.uh-input-form.is-warning textarea:focus,
+.uh-input-form.is-warning input[type=text]:focus,
+.uh-input-form.is-warning input[type=password]:focus,
+.uh-input-form.is-warning input[type=email]:focus,
+.uh-input-form.is-warning input[type=search]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 206, 7, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(255, 206, 7, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 206, 7, 0.15);
+}
+.uh-input-form.is-success label {
+  color: #2fbd90;
+}
+.uh-input-form.is-success select,
+.uh-input-form.is-success textarea,
+.uh-input-form.is-success input[type=text],
+.uh-input-form.is-success input[type=password],
+.uh-input-form.is-success input[type=email],
+.uh-input-form.is-success input[type=search] {
+  border: solid 1px #2fbd90;
+}
+.uh-input-form.is-success select:focus,
+.uh-input-form.is-success textarea:focus,
+.uh-input-form.is-success input[type=text]:focus,
+.uh-input-form.is-success input[type=password]:focus,
+.uh-input-form.is-success input[type=email]:focus,
+.uh-input-form.is-success input[type=search]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+  box-shadow: 0 0 0 3px rgba(47, 189, 144, 0.15);
+}
+.uh-input-form.is-info label {
+  color: #2791d9;
+}
+.uh-input-form.is-info select,
+.uh-input-form.is-info textarea,
+.uh-input-form.is-info input[type=text],
+.uh-input-form.is-info input[type=password],
+.uh-input-form.is-info input[type=email],
+.uh-input-form.is-info input[type=search] {
+  border: solid 1px #2791d9;
+}
+.uh-input-form.is-info select:focus,
+.uh-input-form.is-info textarea:focus,
+.uh-input-form.is-info input[type=text]:focus,
+.uh-input-form.is-info input[type=password]:focus,
+.uh-input-form.is-info input[type=email]:focus,
+.uh-input-form.is-info input[type=search]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+  box-shadow: 0 0 0 3px rgba(39, 145, 217, 0.15);
+}
+
+/*# sourceMappingURL=urbanstory.css.map */
