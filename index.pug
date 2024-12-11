@@ -13,10 +13,20 @@ html(lang="en" page-class="home")
     body
         
         // header
+        include pug/includes/header.pug
+        
         // nav
+        include pug/includes/nav.pug
+
         // main
-        main 
-            h1 Hello World
+        main.site-main
+            .container
+                .row 
+                    .col-lg-4
+                        include pug/home/aside.pug
+                    .col-lg-8
+                        include pug/home/section_hero.pug
+            
 
         
 
