@@ -26,6 +26,24 @@
     scroll-behavior: smooth;
   }
 }
+::-moz-selection {
+  background: var(--primary);
+  color: #fff;
+}
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -129,7 +147,6 @@ a:hover {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
 }
 
@@ -5289,6 +5306,42 @@ article {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-size: 4rem;
+}
+
+h2, .h2 {
+  font-size: 3.5rem;
+}
+
+h3, .h3 {
+  font-size: 3rem;
+}
+
+h4, .h4 {
+  font-size: 2.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.75rem;
+}
+
+h6, .h6 {
+  font-size: 1.125rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-light {
+  color: var(--text-tertiary);
+}
+
 .outline {
   outline: solid 1px red;
 }
@@ -5327,6 +5380,11 @@ article {
 .site-logo img {
   margin: 0;
   padding: 0;
+}
+
+.site-aside {
+  position: sticky;
+  top: 0px;
 }
 
 .site-menu {
@@ -5371,13 +5429,38 @@ article {
 }
 
 .site-main {
-  padding-top: 50px;
+  padding-top: 0px;
+}
+
+.section-full {
+  min-height: calc(100vh - 0px);
+}
+
+.adjust-anchor:target:before {
+  content: "";
+  display: block;
+  height: 50px; /* fixed header height*/
+  margin: -50px 0 0; /* negative fixed header height */
 }
 
 .title-main {
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 6.5rem;
   letter-spacing: 1rem;
+  line-height: 1.2em;
+  position: relative;
+  margin: 0 0 2rem 0;
+  padding-bottom: 2rem;
+}
+.title-main:after {
+  content: "";
+  width: 72px;
+  height: 5px;
+  display: block;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .title-main span {
   display: block;
@@ -5387,9 +5470,23 @@ article {
   color: var(--text-primary);
 }
 .title-main span:nth-child(2) {
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
 }
 .title-main span:nth-child(3) {
   letter-spacing: 1.1rem;
-  color: var(--text-tertiary);
+  color: var(--text-primary);
+}
+
+.title-sub {
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+
+.list-casual {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-casual li {
+  padding: 0.5rem 0;
 }
