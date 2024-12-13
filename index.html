@@ -44,14 +44,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" as="style" href="css/style.css">
+    <link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </head>
   <body>
     <!-- header-->
     <header class="site-header"></header>
     <!-- nav-->
-    <nav class="site-nav"><a class="site-logo" href="/"> <img src="img/logo-dikaseva.svg" alt="Logo Dika Soul Seva"></a>
+    <nav class="site-nav scrollspy-nav"><a class="site-logo" href="/"> <img src="img/logo-dikaseva.svg" alt="Logo Dika Soul Seva"></a>
       <ul class="site-menu d-flex align-items-center flex-row-reverse">
-        <li><a class="d-flex align-items-center" href="#home">Home</a></li>
+        <li class="is-active"><a class="d-flex align-items-center" href="#home">Home</a></li>
         <li><a class="d-flex align-items-center" href="#about">About </a></li>
         <li><a class="d-flex align-items-center" href="#skills">Skills</a></li>
         <li><a class="d-flex align-items-center" href="#works">Works</a></li>
@@ -71,12 +72,12 @@
             </aside>
           </div>
           <div class="col-lg-8">
-            <section class="py-lg-5 section-full d-flex align-items-center adjust-anchor" id="home">
+            <section class="py-lg-5 section-full d-flex align-items-center adjust-anchor scrollspy-content" id="home">
               <div class="row">
-                <div class="col-12"><img src="img/hero-dikaseva.webp" alt="Dika Soul Seva"></div>
+                <div class="col-12"><img loading="lazy" src="img/hero-dikaseva.webp" alt="Dika Soul Seva | Product Designer | UI / UX Designer"></div>
               </div>
             </section>
-            <section class="py-lg-5 section-full d-flex align-items-center" id="about">
+            <section class="py-lg-5 section-full d-flex align-items-center scrollspy-content" id="about">
               <div class="row"> 
                 <div class="col-12">
                   <h3 class="mb-0">ABOUT</h3>
@@ -86,7 +87,7 @@
                 </div>
               </div>
             </section>
-            <section class="py-lg-5 section-full d-flex align-items-center" id="skills">
+            <section class="py-lg-5 section-full d-flex align-items-center scrollspy-content" id="skills">
               <div class="row"> 
                 <div class="col-12">
                   <h3 class="mb-0">SKILLS</h3>
@@ -94,7 +95,7 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-4">
-                    <h5 class="mt-0 mb-3">SOFT</h5>
+                    <h5 class="mt-lg-0 mb-3 ms-2">SOFT</h5>
                     <ul class="list-casual"> 
                       <li>Design systems and style guides</li>
                       <li>Wireframing and prototyping</li>
@@ -105,37 +106,72 @@
                     </ul>
                   </div>
                   <div class="col-lg-4"> 
-                    <h5 class="mt-0 mb-3">TOOL</h5>
+                    <h5 class="mt-lg-0 mb-3 ms-2">TOOL</h5>
                     <ul class="list-casual"> 
                       <li>Figma</li>
                       <li>Sketch App</li>
                       <li>
-                         Adobe Creative Suite <i>(Ps, Ai, Lr, Xd)</i></li>
+                         Adobe Creative Suite <i class="text-light">(Ps, Ai, Lr, Xd)</i></li>
                       <li>Figjam</li>
                     </ul>
                   </div>
                   <div class="col-lg-4">
-                    <h5 class="mt-0 mb-3">TECHNICAL</h5>
+                    <h5 class="mt-lg-0 mb-3 ms-2">TECHNICAL</h5>
                     <ul class="list-casual"> 
                       <li>HTML and CSS</li>
                       <li>Jquery and basic JavaScript</li>
                       <li>Pug (JavaScript)</li>
                       <li>Sass CSS</li>
-                      <li>Understanding of Semantic HTML, SEO-friendly practices, web performance, and image optimization</li>
+                      <li>Understanding of Semantic HTML, SEO-friendly practices, and image optimization</li>
                       <li>Familiarity with front-end frameworks such as Bootstrap</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </section>
-            <section class="py-lg-5 section-full" id="works">
-              <div class="row"> 
-                <div class="col-12"><img src="img/hero-dikaseva.webp" alt="Dika Soul Seva"></div>
+            <section class="py-lg-5 section-full d-flex align-items-center scrollspy-content" id="works">
+              <div>
+                <div class="row"> 
+                  <div class="col-12">
+                    <h3 class="mb-0">WORKS</h3>
+                    <p class="mt-2 text-light"><i>Some of results</i></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6"><a class="card-work" href="#"> 
+                      <div class="card-cover"><img class="w-100" loading="lazy" src="img/photo/0.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div></a></div>
+                  <div class="col-lg-4 col-md-6"><a class="card-work" href="#"> 
+                      <div class="card-cover"><img class="w-100" loading="lazy" src="img/photo/1.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div></a></div>
+                  <div class="col-lg-4 col-md-6"><a class="card-work" href="#"> 
+                      <div class="card-cover"><img class="w-100" loading="lazy" src="img/photo/2.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div></a></div>
+                </div>
               </div>
             </section>
-            <section class="py-lg-5 section-full" id="photography">
-              <div class="row"> 
-                <div class="col-12"><img src="img/hero-dikaseva.webp" alt="Dika Soul Seva"></div>
+            <section class="py-lg-5 section-full d-flex align-items-center scrollspy-content" id="photography">
+              <div>
+                <div class="row"> 
+                  <div class="col-12">
+                    <h3 class="mb-0">PHOTOGRAPHY</h3>
+                    <p class="mt-2 text-light"><i>One of the hobby through the lens</i></p>
+                  </div>
+                </div>
+                <div class="row px-2">
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/1.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/2.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/3.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/4.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/5.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/6.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/7.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/8.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/9.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/10.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/11.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/12.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/13.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/14.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                  <div class="col-4 p-0 photo-item"><img class="w-100" loading="lazy" src="img/photo/15.jpg" alt="Dika Soul Seva Photo | Product Designer | UI / UX Designer"></div>
+                </div>
               </div>
             </section>
           </div>
@@ -144,6 +180,6 @@
     </main>
     <!-- Footer-->
   </body>
-  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-3.7.1.slim.min.js"></script>
   <script src="js/main.js"></script>
 </html>

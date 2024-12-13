@@ -23,6 +23,7 @@
 
 body{
     font-size: 1.125rem;
+    position: relative;
 }
 
 
@@ -109,7 +110,7 @@ h6, .h6{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transform: rotate(-90deg);
@@ -122,12 +123,13 @@ h6, .h6{
         
         a{
             text-decoration: none;
-            color: var(--text-primary);
+            color: var(--text-secondary);
             display: inline-block;
             width: auto;
             height: 100%;
             padding: 0 1rem;
             position: relative;
+            letter-spacing: .1rem;
             &:hover{
                 background-color: var(--bg-default);
                 &::before{
@@ -144,12 +146,29 @@ h6, .h6{
             }
             
         }
+        &.is-active{
+            a{
+                &::before{
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--primary);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+            }
+        }
     }
     
 }
 
 .site-main{
     padding-top: 0px;
+    padding-left: 50px;
+    background-color: white;
 }
 
 .section-full{
@@ -209,6 +228,113 @@ h6, .h6{
     margin: 0;
     padding: 0;
     li{
-        padding: .5rem 0;
+        padding: .5rem .5rem;
+        &:hover{
+            background-color: var(--text-secondary);
+            color: white;
+        }
     }
 }
+
+.works-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-default);
+}
+
+.full-card {
+    // height: 240px;
+    overflow: hidden;
+    text-decoration: none;
+    border: none;
+    .full-card-cover {
+      & > .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+      }
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+        // filter: hue-rotate(90deg);
+        -webkit-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.5s;
+        -moz-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.5s;
+        -o-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.5s;
+        transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.5s;
+      }
+    }
+    .full-card-body {
+      aspect-ratio: 16/9;
+      position: relative;
+      width: 100%;
+    //   min-height: 248px;
+      outline: solid 1px red;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: rgba(black, 0.3);
+      & > div {
+        position: relative;
+        z-index: 4;
+      }
+    }
+  
+    .title-country {
+      color: white;
+      position: relative;
+      padding: 0.5rem 0;
+      margin: 0;
+      text-align: center;
+      // font-size: var(--font-size-3x);
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5rem;
+        height: 2px;
+        background-color: var(--success);
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        -webkit-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.35s;
+        -moz-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.35s;
+        -o-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.35s;
+        transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.35s;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  
+    &:hover {
+      box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.5),
+        0px 8px 16px -4px rgba(1, 24, 48, 0.35);
+      .full-card-cover {
+        & > img {
+          transform: scale(1.1);
+        }
+      }
+      .title-country {
+        &::before {
+          width: 4rem;
+        }
+        &::after {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .photo-item{
+    margin-bottom:-4px
+  }
