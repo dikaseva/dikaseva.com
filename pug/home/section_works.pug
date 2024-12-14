@@ -2,27 +2,34 @@ section#works.py-lg-5.section-full.d-flex.align-items-center.scrollspy-content
     div
         .row 
             .col-12
-                h3.mb-0 WORKS
-                p.mt-2.text-light
-                    i Some of results
+                div
+                    h3.mb-0 WORKS
+                    .d-flex.justify-content-between.alignt-items-center
+                        div
+                            p.mt-2.text-light
+                                i Some of results
+                        div
+                            a.btn(href=baseURL+"/works") SEE ALL
+                
+                    
 
         .row
-            //- - var n = 1;
-            //- while n < 4
-            //-     .col-lg-4.col-md-6
-            //-         a.card-work(href="#") 
-            //-             .card-cover
-            //-                 img.w-100(loading='lazy' src=baseURL+'img/photo/'+ n++ +'.jpg' alt='Dika Soul Seva Photo | Product Designer | UI / UX Designer')
+            - var n = 4;
+            while n < 7
+                .col-lg-4.col-md-6
+                    a.card-work(href="#") 
+                        .card-cover
+                            img.w-100(loading='lazy' src=baseURL+'img/photo/'+ n++ +'.jpg' alt='Dika Soul Seva Photo | Product Designer | UI / UX Designer')
                     
-            //-             h6 workTitle++
-            //-             div 
-            //-                 span.tag Landing page 
-            //-                 span.tag Lainnya
+                        h6 Judul
+                        div 
+                            span.tag Landing page 
+                            span.tag Lainnya
 
             //- each val in [1, 2, 3]
-            each title, val in ["A", "B", "C"]
-                    .col-lg-4.col-md-6
-                        a.card-work(href="#") 
-                            .card-cover
-                                img.w-100(loading='lazy' src=baseURL+'img/photo/'+ val +'.jpg' alt='Dika Soul Seva Photo | Product Designer | UI / UX Designer')
+            //- each title, val in ["A", "B", "C"]
+            //-         .col-lg-4.col-md-6
+            //-             a.card-work(href="#") 
+            //-                 .card-cover
+            //-                     img.w-100(loading='lazy' src=baseURL+'img/photo/'+ val +'.jpg' alt='Dika Soul Seva Photo | Product Designer | UI / UX Designer')
 

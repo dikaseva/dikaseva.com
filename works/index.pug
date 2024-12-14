@@ -1,0 +1,35 @@
+//- INDEX LANDING PAGES
+//- start variable
+- var pageActive = 'works'
+- var baseURL = '../'
+- var contentDescription = {}
+- ogImageURL = baseURL+"img/jaripmi-berdaya.jpg"
+- contentDescription.title = "Dika Soul Seva | Product Designer | UI/UX Designer"
+- contentDescription.description = "A Product Designer with more than 10 years of experiences in designing user experience through digital products."
+
+doctype html
+html(lang="en" page-class="home")
+    include ../pug/includes/html_head.pug
+    body
+        
+        // header
+        include ../pug/includes/header.pug
+        
+        // nav
+        include ../pug/includes/nav.pug
+
+        // main
+        main.site-main
+            .container
+                include ../pug/works/section_hero.pug
+                include ../pug/works/section_content.pug
+            
+            
+
+        
+
+        // Footer
+
+
+    include ../pug/includes/html_foot.pug
+

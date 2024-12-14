@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" page-class="home">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Dika Soul Seva | Product Designer | UI/UX Designer</title>
+    <meta name="description" content="A Product Designer with more than 10 years of experiences in designing user experience through digital products.">
+    <link rel="canonical" href="https://jaripmi.info">
+    <link rel="alternate" hreflang="id" href="https://jaripmi.info">
+    <meta property="og:image" content="../img/jaripmi-berdaya.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="627">
+    <meta property="og:locale" content="id_ID">
+    <meta meta property="og:type" content="website">
+    <meta property="og:description" content="A Product Designer with more than 10 years of experiences in designing user experience through digital products.">
+    <meta property="og:site_name" content="Prakerja">
+    <meta property="og:url" content="../img/jaripmi-berdaya.jpg">
+    <meta name="twitter:card" content="../img/jaripmi-berdaya.jpg">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Dika Soul Seva | Product Designer | UI/UX Designer">
+    <meta name="twitter:description" content="A Product Designer with more than 10 years of experiences in designing user experience through digital products.">
+    <meta name="twitter:image" content="../img/jaripmi-berdaya.jpg">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" as="style" href="../css/style.css">
+    <link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <!-- header-->
+    <header class="site-header"></header>
+    <!-- nav-->
+    <nav class="site-nav scrollspy-nav"><a class="site-logo" href="..//"> <img src="../img/logo-dikaseva.svg" alt="Logo Dika Soul Seva"></a>
+      <ul class="site-menu d-flex align-items-center flex-row-reverse">
+        <li><a class="d-flex align-items-center" href="../#home">Home</a></li>
+        <li><a class="d-flex align-items-center" href="../#about">About </a></li>
+        <li><a class="d-flex align-items-center" href="../#skills">Skills</a></li>
+        <li class="is-active"><a class="d-flex align-items-center" href="../#works">Works</a></li>
+        <li><a class="d-flex align-items-center" href="../#photography">Photography</a></li>
+      </ul>
+    </nav>
+    <!-- main-->
+    <main class="site-main">
+      <div class="container">
+        <section class="pt-lg-5 pb-lg-0">
+          <div class="row"> 
+            <div class="col-12">
+              <h3 class="mb-0">WORKS</h3>
+              <p class="mt-2 text-light"><i>Some of results</i></p>
+            </div>
+          </div>
+        </section>
+        <section class="py-lg-5">
+          <nav class="tab-nav" id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">ALL</button>
+            <button class="btn" onclick="filterSelection('website')">WEBSITE</button>
+            <button class="btn" onclick="filterSelection('mobileapp')">MOBILE APP</button>
+            <button class="btn" onclick="filterSelection('designsystem')">DESIGN SYSTEM</button>
+            <button class="btn" onclick="filterSelection('others')">OTHERS</button>
+          </nav>
+          <div class="tab-content"> 
+            <div class="row" id="worksContainer"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer-->
+  </body>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>

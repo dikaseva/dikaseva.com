@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Indonesia Skills Week",
+      "URL": "/works/isw/",
+      "imgCover": "img/works/thumb-isw.webp",
+      "tag": ["landing", "prakerja"],
+      "listStudents": [
+        {
+          "studentName": "John Doe",
+          "stuudentId": "johndoe",
+          "studentPage": "/students/johndoe.html",
+          "studentImageUrl": "/img/photo/4.jpg"
+        }
+      ]
+    },
+    {
+        "title": "Jari PMI",
+        "URL": "/works/jari-pmi/",
+        "imgCover": "img/works/thumb-isw.webp",
+        "tag": ["landing", "others"],
+        "listStudents": [
+          {
+            "studentName": "Bambang",
+            "stuudentId": "johndoe",
+            "studentPage": "/students/johndoe.html",
+            "studentImageUrl": "/img/photo/5.jpg"
+          }
+        ]
+      }
+  ]

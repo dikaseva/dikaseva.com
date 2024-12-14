@@ -3,7 +3,7 @@ nav.site-nav.scrollspy-nav
         img(src=baseURL+"img/logo-dikaseva.svg", alt="Logo Dika Soul Seva")
 
     ul.site-menu.d-flex.align-items-center.flex-row-reverse
-        li.is-active
+        li(class={"is-active" : pageActive === 'home'})
             a.d-flex.align-items-center(href=baseURL+"#home") Home
         
         li
@@ -12,7 +12,7 @@ nav.site-nav.scrollspy-nav
         li
             a.d-flex.align-items-center(href=baseURL+"#skills") Skills
 
-        li
+        li(class={"is-active" : pageActive === 'works'})
             a.d-flex.align-items-center(href=baseURL+"#works") Works
 
         li

@@ -1,0 +1,450 @@
+[
+    {
+        "title": "Jari PMI",
+        "category": "website",
+        "URL": "/works/jari-pmi/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "others"],
+        "description": [
+          {
+           "detailTitle" : "Jari PMI",
+           "detailDesc" : "The goal is to establish an Information Center for Indonesian Migrant Workers (PMI) and their families that addresses aspects of protection and empowerment, ultimately realizing the vision of a 'Empowered PMI' by bridging the information gap accessible to PMIs.",
+           "videoURL" : "/video/jaripmi.mp4",
+           "roles" : ["Gather requirements", "Research", "Design", "Slice to HTML"]
+          }
+        ]
+      },
+      {
+        "title": "Indonesia Skills Week",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Prakerja x Alibaba",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Statistik Prakerja",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Lifelong Learning Event",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Prakerja Annual Report 2022-2023",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Prakerja Landing",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Prakerja User Dashboard",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "SIVA Prakerja 2.0",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "CMS Prakerja 2.0",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Prakerja Design System",
+        "category": "designsystem",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "SDG Event by Prakerja",
+        "category": "website",
+        "URL": "/works/isw/",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["landing", "prakerja"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire Design System",
+        "category": "designsystem",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire Landing Page",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire Job Portal",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urban Icon",
+        "category": "others",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire ATS",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire ATS App",
+        "category": "mobileapp",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["Urbanhire", "mobileapp"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Urbanhire Jobseeker App",
+        "category": "mobileapp",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Greatday HR",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "CRM Telkom ACI",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Ramadian & Satari",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Maimilu",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Gelora.id",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Teammates.co",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Musin Lawson",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Printhink.co",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Buzzbuddies",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Buzzbuddies App",
+        "category": "mobileapp",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Sicepat Ekspress",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Jalankece Blog",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Domusalba",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Graphdes.net",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Navigatech",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Aerosource",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Orderanku",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      },
+      {
+        "title": "Eko Properti",
+        "category": "website",
+        "URL": "",
+        "imgCover": "/img/works/img-placeholder.png",
+        "tags": ["tag1", "tag2"],
+        "description": [
+          {
+            
+          }
+        ]
+      }
+
+  ]
